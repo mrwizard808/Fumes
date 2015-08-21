@@ -1,0 +1,5 @@
+C:\Users\Victop\Desktop\School\Programming Laguages\SteamInformer\SteamInformer\obj\Debug\Fumes.csprojResolveAssemblyReference.cache
+C:\Users\Victop\Desktop\School\Programming Laguages\SteamInformer\SteamInformer\bin\Debug\Fumes.dll
+C:\Users\Victop\Desktop\School\Programming Laguages\SteamInformer\SteamInformer\bin\Debug\Fumes.pdb
+C:\Users\Victop\Desktop\School\Programming Laguages\SteamInformer\SteamInformer\obj\Debug\Fumes.dll
+C:\Users\Victop\Desktop\School\Programming Laguages\SteamInformer\SteamInformer\obj\Debug\Fumes.pdb
