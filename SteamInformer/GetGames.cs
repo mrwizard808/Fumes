@@ -8,7 +8,7 @@ namespace Fumes
 {
     class GetGames : NetworkOperation
     {
-        public GetGames(Action<string> callback) : base("/GetGames", callback)
+        public GetGames(Action<string> callback) : base("/GetGames", callback) //by price, genre, on-sale user review
         {
             //will return a 10 long game list according to filter parameter provided
         }
