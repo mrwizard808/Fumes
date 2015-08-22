@@ -43,6 +43,7 @@
     <Compile Include="GetGames.cs" />
     <Compile Include="GetNumOfPlayers.cs" />
     <Compile Include="GetReview.cs" />
+    <Compile Include="GetStats.cs" />
     <Compile Include="Interfaces.cs" />
     <Compile Include="NetworkOperation.cs" />
     <Compile Include="FumesController.cs" />
