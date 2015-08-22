@@ -14,6 +14,7 @@ namespace LibraryTester {
             FumesController controller = new FumesController();
             NetworkOperation op = new NetworkOperation("", (string data) => {
                 Console.WriteLine(data);
+                //send output to file...
             });
             controller.AddOperation(op);
 
