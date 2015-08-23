@@ -39,15 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GerHoursPlayed.cs" />
-    <Compile Include="GetGames.cs" />
-    <Compile Include="GetNumOfPlayers.cs" />
-    <Compile Include="GetReview.cs" />
-    <Compile Include="GetStats.cs" />
     <Compile Include="Interfaces.cs" />
     <Compile Include="NetworkOperation.cs" />
     <Compile Include="FumesController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogIn.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
