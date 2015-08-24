@@ -4,22 +4,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Fumes;
+using System.IO;
 
-namespace LibraryTester {
+namespace LibraryTester
+{
 
-    class Program {
+    class Program
+    {
 
-        static void Main(string[] args) {
+        static void Main(string[] args)
+        {
 
-            FumesController controller = new FumesController();
-            NetworkOperation op = new NetworkOperation("", (string data) => {
-                Console.WriteLine(data);
-                //send output to file...
-            });
-            controller.AddOperation(op);
+            FileStream ostrm = null;
+            StreamWriter writer = null;
+
+            try
+            {
+                ostrm = new FileStream("./Output.txt", FileMode.OpenOrCreate, FileAccess.Write);
+                writer = new StreamWriter(ostrm);
+                writer.WriteLine("**************" + DateTime.Now.ToString() + "**************");
+                writer.WriteLine(new Fumes.Api().Test());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Cannot open Output.txt for writing");
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                if (writer != null) { writer.Close(); }
+                if (ostrm != null) { ostrm.Close(); }
+                
+            }
 
         }
-
     }
 
 }
