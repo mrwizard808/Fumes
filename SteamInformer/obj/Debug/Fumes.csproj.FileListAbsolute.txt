@@ -7,3 +7,4 @@ C:\Users\Alon\Documents\Fumes\SteamInformer\bin\Debug\Fumes.dll
 C:\Users\Alon\Documents\Fumes\SteamInformer\bin\Debug\Fumes.pdb
 C:\Users\Alon\Documents\Fumes\SteamInformer\obj\Debug\Fumes.dll
 C:\Users\Alon\Documents\Fumes\SteamInformer\obj\Debug\Fumes.pdb
+C:\Users\Alon\Documents\Fumes\SteamInformer\obj\Debug\Fumes.csprojResolveAssemblyReference.cache

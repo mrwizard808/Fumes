@@ -14,3 +14,5 @@ C:\Users\Alon\Documents\Fumes\LibraryTester\bin\Debug\LibraryTester.pdb
 C:\Users\Alon\Documents\Fumes\LibraryTester\bin\Debug\Fumes.dll
 C:\Users\Alon\Documents\Fumes\LibraryTester\bin\Debug\Fumes.pdb
 C:\Users\Alon\Documents\Fumes\LibraryTester\obj\Debug\LibraryTester.csprojResolveAssemblyReference.cache
+C:\Users\Alon\Documents\Fumes\LibraryTester\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alon\Documents\Fumes\LibraryTester\bin\Debug\Newtonsoft.Json.xml

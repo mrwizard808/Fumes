@@ -34,5 +34,10 @@ namespace Fumes
             //close streams
             return result;
         }
+
+        public string Test()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
