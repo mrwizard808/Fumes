@@ -8,3 +8,5 @@ C:\Users\Alon\Documents\Fumes\SteamInformer\bin\Debug\Fumes.pdb
 C:\Users\Alon\Documents\Fumes\SteamInformer\obj\Debug\Fumes.dll
 C:\Users\Alon\Documents\Fumes\SteamInformer\obj\Debug\Fumes.pdb
 C:\Users\Alon\Documents\Fumes\SteamInformer\obj\Debug\Fumes.csprojResolveAssemblyReference.cache
+C:\Users\Alon\Documents\Fumes\SteamInformer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alon\Documents\Fumes\SteamInformer\bin\Debug\Newtonsoft.Json.xml

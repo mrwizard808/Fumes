@@ -35,6 +35,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Api.cs" />
     <Compile Include="Interfaces.cs" />
+    <Compile Include="MiniJSON.cs" />
     <Compile Include="NetworkOperation.cs" />
     <Compile Include="FumesController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
