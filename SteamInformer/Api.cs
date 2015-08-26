@@ -15,7 +15,7 @@ namespace Fumes
 
         private string myBaseUrl = "https://api.steampowered.com/";
         private string myKey = "A1C004B8A13F27D9DE916AD6864050E1";
-       
+
         //get latest news for appid (game, dlc..)
         public object GetGameNews(int appid)
         {
@@ -40,8 +40,18 @@ namespace Fumes
             return retVal;
             //try using newtonsoft??
         }
-        
-        
+
+        //get steam library
+        public object GetSteamLibrary(string user_id)
+        {
+            string result = GetDataFromUrl(myBaseUrl + "id/"+user_id+"/games?tab=all&xml=1");
+            object retVal = Serialization.MiniJSON.Json.Deserialize(result);
+            return retVal;
+           
+        }
+
+
+       //http://steamcommunity.com/id/mr_wizard808/games?tab=all&xml=1
 
         private string GetDataFromUrl(string url)
         {
