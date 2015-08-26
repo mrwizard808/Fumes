@@ -15,7 +15,7 @@ namespace LibraryTester
 
         static void Main(string[] args)
         {
-            Api test = new Api();
+            FumesApiHandler test = new FumesApiHandler();
             test.GetSteamLibrary();
             //test.GetGameList();
             //test.GetGameNews(208200);

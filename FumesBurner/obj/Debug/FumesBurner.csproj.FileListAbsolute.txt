@@ -1,0 +1,7 @@
+C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\bin\Debug\FumesBurner.dll
+C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\bin\Debug\FumesBurner.pdb
+C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\bin\Debug\Fumes.dll
+C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\bin\Debug\Fumes.pdb
+C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\obj\Debug\FumesBurner.csprojResolveAssemblyReference.cache
+C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\obj\Debug\FumesBurner.dll
+C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\obj\Debug\FumesBurner.pdb

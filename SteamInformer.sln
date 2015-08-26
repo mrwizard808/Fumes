@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fumes", "SteamInformer\Fumes.csproj", "{7D3403DC-9665-4023-8770-1AF0A5E32564}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTester", "LibraryTester\LibraryTester.csproj", "{EB88F06C-73EB-478B-840D-8E788AB7A532}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FumesBurner", "FumesBurner\FumesBurner.csproj", "{F32ABE7A-8013-4796-81C1-7BCFC6E3E1B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{7D3403DC-9665-4023-8770-1AF0A5E32564}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D3403DC-9665-4023-8770-1AF0A5E32564}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D3403DC-9665-4023-8770-1AF0A5E32564}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB88F06C-73EB-478B-840D-8E788AB7A532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB88F06C-73EB-478B-840D-8E788AB7A532}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB88F06C-73EB-478B-840D-8E788AB7A532}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB88F06C-73EB-478B-840D-8E788AB7A532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F32ABE7A-8013-4796-81C1-7BCFC6E3E1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32ABE7A-8013-4796-81C1-7BCFC6E3E1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32ABE7A-8013-4796-81C1-7BCFC6E3E1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32ABE7A-8013-4796-81C1-7BCFC6E3E1B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
