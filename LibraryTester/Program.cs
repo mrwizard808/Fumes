@@ -16,7 +16,8 @@ namespace LibraryTester
         static void Main(string[] args)
         {
             Api test = new Api();
-            test.GetGameList();
+            test.GetSteamLibrary();
+            //test.GetGameList();
             //test.GetGameNews(208200);
 
             //FileStream ostrm = null;
