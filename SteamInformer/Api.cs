@@ -44,7 +44,7 @@ namespace Fumes
         //get steam library
         public object GetSteamLibrary()
         {
-            string result = GetDataFromUrl(myBaseUrl + "id/mr_wizard808/games?tab=all&xml=1");
+            string result = GetDataFromUrl(myBaseUrl + "/id/mr_wizard808/games?tab=all&format=json");
             object retVal = Serialization.MiniJSON.Json.Deserialize(result);
             return retVal;
            
