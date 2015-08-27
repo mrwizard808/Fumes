@@ -7,10 +7,10 @@ using System.Collections;
 
 namespace Fumes {
 
-    public class GameInfo {
+    class GameInfo : IGameInfo {
 
-        public int appId;
-        public string name;
+        public int appId { get; private set; }
+        public string name { get; private set; }
 
         public GameInfo(ICollection json) {
 

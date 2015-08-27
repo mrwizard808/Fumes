@@ -17,3 +17,4 @@ C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\SteamInformer\bin\Debu
 C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\SteamInformer\obj\Debug\Fumes.csprojResolveAssemblyReference.cache
 C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\SteamInformer\obj\Debug\Fumes.dll
 C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\SteamInformer\obj\Debug\Fumes.pdb
+C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\SteamInformer\bin\Debug\Fumes.XML

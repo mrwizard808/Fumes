@@ -8,16 +8,16 @@ using System.Xml;
 
 namespace Fumes {
 
-    public class SteamGame {
+    class SteamGame : ISteamGame {
 
-        public int appId;
-        public string name;
-        public string logo;
-        public string storeLink;
-        public string statsLink;
-        public string globalStatsLink;
-        public double lastTwoWeeks;
-        public double hoursOnRecord;
+        public int appId { get; private set; }
+        public string name { get; private set; }
+        public string logo { get; private set; }
+        public string storeLink { get; private set; }
+        public string statsLink { get; private set; }
+        public string globalStatsLink { get; private set; }
+        public double lastTwoWeeks { get; private set; }
+        public double hoursOnRecord { get; private set; }
 
         public SteamGame(XmlNode node) {
 

@@ -12,6 +12,10 @@ using System.Xml;
 
 namespace Fumes {
 
+    /// <summary>
+    /// Simple API to the public steam web api which grants access to game news, global achivement
+    /// data, list of all games in the steam store and basic profile info on user
+    /// </summary>
     public class FumesApiHandler : IApi {
 
         public static FumesApiHandler instance {get; private set;}
@@ -28,7 +32,7 @@ namespace Fumes {
         /// </summary>
         /// <param name="appid">The app to retrieve news for</param>
         /// <returns>SteamNewArticle Array containing the retrived news</returns>
-        public SteamNewsArticle[] GetGameNews(int appid) {
+        public ISteamNewsArticle[] GetGameNews(int appid) {
 
             string result = GetDataFromUrl(Tags.steamApiUrl + "ISteamNews/GetNewsForApp/v0002/?appid=" + appid + "&count=100&format=json");
             IDictionary mainDic = Serialization.MiniJSON.Json.Deserialize(result) as IDictionary;
@@ -49,7 +53,7 @@ namespace Fumes {
         /// </summary>
         /// <param name="appid">The game to retrive the achievements for</param>
         /// <returns>AchievementData Array containing all the achivements that the game has</returns>
-        public AchievementData[] GetGameGlobalAchievements(int appid) {
+        public IAchievementData[] GetGameGlobalAchievements(int appid) {
 
             string result = GetDataFromUrl(Tags.steamApiUrl + "ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=" + appid + "&format=json");
             IDictionary mainDic = Serialization.MiniJSON.Json.Deserialize(result) as IDictionary;
@@ -69,7 +73,7 @@ namespace Fumes {
         /// Retieves the basic information for all the games in the steam store
         /// </summary>
         /// <returns>GameInfo Array containing all the games in the steam store</returns>
-        public GameInfo[] GetAllGames() {
+        public IGameInfo[] GetAllGames() {
 
             string result = GetDataFromUrl(Tags.steamApiUrl + "ISteamApps/GetAppList/v2");
             IDictionary mainDic = Serialization.MiniJSON.Json.Deserialize(result) as IDictionary;
@@ -90,12 +94,12 @@ namespace Fumes {
         /// </summary>
         /// <param name="user">The user name for which the library should be retrived</param>
         /// <returns>SteamGameProfile of the user containing its info</returns>
-        public SteamGameProfile GetSteamLibrary(string user) {
+        public ISteamProfile GetSteamLibrary(string user) {
 
             string result = GetDataFromUrl(Tags.steamCommunityUrl + "/id/" + user + "/games?tab=all&xml=1");
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(result);
-            SteamGameProfile retVal = new SteamGameProfile(doc["gamesList"]);
+            SteamProfile retVal = new SteamProfile(doc["gamesList"]);
             return retVal;
 
         }
@@ -112,7 +116,9 @@ namespace Fumes {
             Stream dataStream = res.GetResponseStream();
             StreamReader reader = new StreamReader(dataStream);
             string result = reader.ReadToEnd();
-            //close streams
+            dataStream.Close();
+            reader.Close();
+            res.Close();
             return result;
 
         }

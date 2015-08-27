@@ -5,3 +5,4 @@ C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\bin\Debug\
 C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\obj\Debug\FumesBurner.csprojResolveAssemblyReference.cache
 C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\obj\Debug\FumesBurner.dll
 C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\obj\Debug\FumesBurner.pdb
+C:\Users\Victop\Desktop\School\Programming Laguages\Fumes\FumesBurner\bin\Debug\Fumes.xml

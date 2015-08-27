@@ -7,16 +7,16 @@ using System.Collections;
 
 namespace Fumes {
 
-    public class SteamNewsArticle {
+    class SteamNewsArticle : ISteamNewsArticle {
 
-        public long gid;
-        public string title;
-        public string url;
-        public string author;
-        public string contents;
-        public string feedLabel;
-        public DateTime date;
-        public string feedName;
+        public long gid { get; private set; }
+        public string title { get; private set; }
+        public string url { get; private set; }
+        public string author { get; private set; }
+        public string contents { get; private set; }
+        public string feedLabel { get; private set; }
+        public DateTime date { get; private set; }
+        public string feedName { get; private set; }
 
         public SteamNewsArticle(ICollection json) {
 

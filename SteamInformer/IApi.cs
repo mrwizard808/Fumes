@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace Fumes {
 
-    interface IApi {
+    /// <summary>
+    /// Interface for the entire api
+    /// </summary>
+    public interface IApi {
 
-        SteamNewsArticle[] GetGameNews(int appid);
-        AchievementData[] GetGameGlobalAchievements(int appid);
-        GameInfo[] GetAllGames();
-        SteamGameProfile GetSteamLibrary(string user);
+        ISteamNewsArticle[] GetGameNews(int appid);
+        IAchievementData[] GetGameGlobalAchievements(int appid);
+        IGameInfo[] GetAllGames();
+        ISteamProfile GetSteamLibrary(string user);
 
     }
 

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fumes</name>
+    </assembly>
+    <members>
+        <member name="T:Fumes.IAchievementData">
+            <summary>
+            Interface for achivements data structures
+            </summary>
+        </member>
+        <member name="T:Fumes.FumesApiHandler">
+            <summary>
+            Simple API to the public steam web api which grants access to game news, global achivement
+            data, list of all games in the steam store and basic profile info on user
+            </summary>
+        </member>
+        <member name="T:Fumes.IApi">
+            <summary>
+            Interface for the entire api
+            </summary>
+        </member>
+        <member name="M:Fumes.FumesApiHandler.GetGameNews(System.Int32)">
+            <summary>
+            Retrieves the 100 latest news for the an app
+            </summary>
+            <param name="appid">The app to retrieve news for</param>
+            <returns>SteamNewArticle Array containing the retrived news</returns>
+        </member>
+        <member name="M:Fumes.FumesApiHandler.GetGameGlobalAchievements(System.Int32)">
+            <summary>
+            Retrived the global achievements stats for a game
+            </summary>
+            <param name="appid">The game to retrive the achievements for</param>
+            <returns>AchievementData Array containing all the achivements that the game has</returns>
+        </member>
+        <member name="M:Fumes.FumesApiHandler.GetAllGames">
+            <summary>
+            Retieves the basic information for all the games in the steam store
+            </summary>
+            <returns>GameInfo Array containing all the games in the steam store</returns>
+        </member>
+        <member name="M:Fumes.FumesApiHandler.GetSteamLibrary(System.String)">
+            <summary>
+            Retirves a user's steam games and their basic info with links
+            </summary>
+            <param name="user">The user name for which the library should be retrived</param>
+            <returns>SteamGameProfile of the user containing its info</returns>
+        </member>
+        <member name="M:Fumes.FumesApiHandler.GetDataFromUrl(System.String)">
+            <summary>
+            Helper function for networked calls
+            </summary>
+        </member>
+        <member name="T:Fumes.IGameInfo">
+            <summary>
+            Interface for game information data structures
+            </summary>
+        </member>
+        <member name="T:Fumes.ISteamGame">
+            <summary>
+            Interface for steam game content data structure
+            </summary>
+        </member>
+        <member name="T:Fumes.ISteamNewsArticle">
+            <summary>
+            Interface for steam news articles data structure
+            </summary>
+        </member>
+        <member name="T:Fumes.ISteamProfile">
+            <summary>
+            Interface for basic user steam profile
+            </summary>
+        </member>
+        <member name="T:Serialization.MiniJSON.Json">
+             <summary>
+             This class encodes and decodes JSON strings.
+             Spec. details, see http://www.json.org/
+            
+             JSON uses Arrays and Objects. These correspond here to the datatypes IList and IDictionary.
+             All numbers are parsed to doubles.
+             </summary>
+        </member>
+        <member name="M:Serialization.MiniJSON.Json.Deserialize(System.String)">
+            <summary>
+            Parses the string json into a value
+            </summary>
+            <param name="json">A JSON string.</param>
+            <returns>An List&lt;object&gt;, a Dictionary&lt;string, object&gt;, a double, an integer,a string, null, true, or false</returns>
+        </member>
+        <member name="M:Serialization.MiniJSON.Json.Serialize(System.Object)">
+            <summary>
+            Converts a IDictionary / IList object or a simple type (string, int, etc.) into a JSON string
+            </summary>
+            <param name="json">A Dictionary&lt;string, object&gt; / List&lt;object&gt;</param>
+            <returns>A JSON encoded string, or null if object 'json' is not serializable</returns>
+        </member>
+    </members>
+</doc>

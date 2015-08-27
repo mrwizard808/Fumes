@@ -11,7 +11,7 @@ namespace FumesBurner {
         public void NewsNetworkTest() {
 
             int appid = 221540;
-            SteamNewsArticle[] retVal = FumesApiHandler.instance.GetGameNews(appid);
+            ISteamNewsArticle[] retVal = FumesApiHandler.instance.GetGameNews(appid);
 
             if(retVal == null) {
                 Console.WriteLine("Error in GetGameNews");
@@ -31,7 +31,7 @@ namespace FumesBurner {
         public void AchievementsTest() {
 
             int appid = 221540;
-            AchievementData[] retVal = FumesApiHandler.instance.GetGameGlobalAchievements(appid);
+            IAchievementData[] retVal = FumesApiHandler.instance.GetGameGlobalAchievements(appid);
 
             if(retVal == null) {
                 Console.WriteLine("Error in GetGameGlobalAchievements");
@@ -50,7 +50,7 @@ namespace FumesBurner {
         [TestMethod]
         public void AllGamesTest() {
 
-            GameInfo[] retVal = FumesApiHandler.instance.GetAllGames();
+            IGameInfo[] retVal = FumesApiHandler.instance.GetAllGames();
 
             if(retVal == null) {
                 Console.WriteLine("Error in GetAllGames");
@@ -70,7 +70,7 @@ namespace FumesBurner {
         public void LibraryTest() {
 
             string user = "mr_wizard808";
-            SteamGameProfile retVal = FumesApiHandler.instance.GetSteamLibrary(user);
+            ISteamProfile retVal = FumesApiHandler.instance.GetSteamLibrary(user);
 
             if(retVal == null) {
                 Console.WriteLine("Error in GetSteamLibrary");

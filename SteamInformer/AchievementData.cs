@@ -7,10 +7,10 @@ using System.Collections;
 
 namespace Fumes {
 
-    public class AchievementData {
+    class AchievementData : IAchievementData {
 
-        string name;
-        double percent;
+        public string name { get; private set; }
+        public double percent { get; private set; }
 
         public AchievementData(ICollection json) {
 

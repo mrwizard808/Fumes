@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fumes {
 
-    public static class Tags {
+    static class Tags {
 
         public static string steamApiUrl = "https://api.steampowered.com/";
         public static string steamCommunityUrl = "http://steamcommunity.com/";

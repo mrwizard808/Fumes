@@ -7,13 +7,13 @@ using System.Xml;
 
 namespace Fumes {
 
-    public class SteamGameProfile {
+    class SteamProfile : ISteamProfile {
 
-        public long steamId;
-        public string steamName;
-        public SteamGame[] games;
+        public long steamId { get; private set; }
+        public string steamName { get; private set; }
+        public ISteamGame[] games { get; private set; }
 
-        public SteamGameProfile(XmlNode node) {
+        public SteamProfile(XmlNode node) {
 
             steamId = long.Parse(node["steamID64"].InnerText);
             steamName = node["steamID"].InnerText;
